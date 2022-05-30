@@ -1,0 +1,22 @@
+<div class="menu-dishes-container" *ngIf="menuDishes.length > 0">
+    <h3><b>Este es su menú. </b></h3>
+    <p>
+        <i>
+            Para más detalles sobre un plato en 
+            particular haga click sobre él.
+        </i>
+    </p>
+    <div class="menu-dishes">
+        <div *ngFor="let dish of menuDishes">
+            <app-dish class="menu-dish"
+            [image]="dish.image"
+            [id]="dish.id"
+            [title]="dish.title"
+            [search]="false"
+            [routerLink]="['/detail', dish.id]">
+            </app-dish>
+        </div>
+    </div>
+</div>
+
+

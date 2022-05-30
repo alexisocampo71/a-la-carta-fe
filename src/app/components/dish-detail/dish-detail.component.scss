@@ -1,0 +1,10 @@
+.dish-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 3vh;
+    }
+}

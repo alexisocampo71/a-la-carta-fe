@@ -1,0 +1,15 @@
+<form novalidate 
+[formGroup]="loginForm" class="login-form">
+    <mat-form-field appearance="outline">
+        <mat-label>email</mat-label>
+        <input matInput type="email" formControlName="email">
+        <mat-error *ngIf="loginForm.get('email')?.invalid">{{ getErrorMessage() }}</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>password</mat-label>
+        <input matInput type="password" formControlName="password">
+        <mat-error *ngIf="loginForm.get('password')?.invalid">Este campo es obligatorio</mat-error>
+    </mat-form-field>
+    <mat-spinner *ngIf="loading"></mat-spinner>
+    <button mat-raised-button [disabled]="loading" color="primary" (click)="handleSubmit($event)">Enviar</button>
+</form>

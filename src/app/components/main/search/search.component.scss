@@ -1,0 +1,27 @@
+.search-results {
+    background-color: lightgray;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.app-header-cursive {
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+}
+ 
+@media (min-width: 750px) {
+    .app-header {
+        font-size: 19px;
+        &-cursive {
+            font-size: 30px;
+        }
+    }
+    .search-results {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50vw;
+    }
+}

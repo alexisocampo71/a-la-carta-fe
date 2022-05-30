@@ -1,0 +1,5 @@
+<mat-toolbar color="primary">
+    <span class="main-logo" routerLink="/">A la Carta!</span>
+    <span class="toolbar-spacer"></span>
+    <button mat-button *ngIf="globalState" (click)="logout()">Log out</button>
+</mat-toolbar>

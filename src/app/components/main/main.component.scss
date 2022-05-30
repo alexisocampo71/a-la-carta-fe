@@ -1,0 +1,19 @@
+app-search {
+    margin: 0 auto;
+    position: relative;
+}
+
+app-totals {
+    text-align: center;
+    margin-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+
+@media (min-width: 750px) {
+    app-menu-dishes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

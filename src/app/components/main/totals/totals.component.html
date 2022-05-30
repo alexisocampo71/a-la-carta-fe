@@ -1,0 +1,5 @@
+<div *ngIf="totals" class="totals">
+    <p *ngIf="totals.menuMinutes > 0"><b>Tiempo promedio de preparación: </b>{{totals.menuMinutes | number : '1.0-2' }} minutos</p>
+    <p *ngIf="totals.menuHealthScore >= 0"><b>Promedio de Health Score: </b>{{ totals.menuHealthScore | number : '1.0-2' }} puntos</p>
+    <p *ngIf="totals.menuPrice > 0"><b>Precio final: </b>${{ totals.menuPrice | number : '1.0-2' }}</p>
+</div>

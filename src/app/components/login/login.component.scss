@@ -1,0 +1,13 @@
+.login-form {
+    margin-top: 8vh;
+}
+
+@media (min-width: 750px) {
+    mat-form-field {
+        width: 25vw;
+    }  
+    button {
+        width: 25vw;
+        height: 52px;
+    }
+}

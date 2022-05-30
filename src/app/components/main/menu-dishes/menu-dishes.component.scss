@@ -1,0 +1,16 @@
+.menu-dishes-container {
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: 3vh;
+    p {
+        margin: 0 10px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 750px) {
+    .menu-dishes-container {
+        width: 50vw;
+    }
+    
+}

@@ -1,0 +1,15 @@
+<h3 class="app-header">
+    Bienvenido a <br> <span class="app-header-cursive">A la Carta!</span><br>
+    <br>
+    Elija los platos de su menú buscando en el siguiente campo:
+</h3>
+<app-search-form (searchResults)="addResults($event)" (searching)="searching = false"></app-search-form>
+<div class="search-results" *ngIf="searching">
+    <app-dish *ngFor="let result of searchResults"
+        [search]="true"
+        [title]="result.title"
+        [id]="result.id"
+        [image]="result.image"
+        (click)="addDish(result.id)">
+    </app-dish>
+</div>
